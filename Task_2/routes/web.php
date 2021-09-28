@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StudentController;
-//use app\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,12 +15,7 @@ use App\Http\Controllers\StudentController;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
-  
- Route::get('/home',[PagesController::class,'index']);
- Route::get('/student',[StudentController::class,'addStudent']);
-  Route::get('/product',[PagesController::class,'product']);
-  Route::get('/contuct',[PagesController::class,'contact']);
-  Route::get('/our team',[PagesController::class,'ourTeam']);
-  Route::get('/about',[PagesController::class,'about']);
+
+Route::get('/student/add',[StudentController::class,'addStudent']);
