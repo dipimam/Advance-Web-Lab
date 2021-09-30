@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
  <div>
-   welcome
+   Contact me on email: dipimamm@gmail.com
  </dib>
 
 @endsection

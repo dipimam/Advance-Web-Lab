@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/student/add',[StudentController::class,'addStudent']);
+Route::get('/registration',[StudentController::class,'addStudent']);
+Route::post('/registration',[StudentController::class,'addStudentSubmit']);
+Route::get('/login',[StudentController::class,'login']);
+Route::post('/login',[StudentController::class,'loginSubmit']);
+Route::get('/contact',[StudentController::class,'contact']);
