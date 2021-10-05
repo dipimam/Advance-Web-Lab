@@ -71,7 +71,7 @@ class StudentController extends Controller
         $student = student::where('s_email',$request->s_email)->first();
 
         if(!empty($student)){
-            if(!strcmp($student['s_password'],$request->s_password)){
+            if(!strcmp($student->s_password,$request->s_password)){
                 return "login successful";
             }
             else{
