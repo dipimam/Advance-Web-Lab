@@ -16,7 +16,7 @@ use App\Http\Controllers\ProjectController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('initiator.pages.initiator.login');
 });
 
 

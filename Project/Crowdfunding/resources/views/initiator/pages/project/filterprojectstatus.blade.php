@@ -24,6 +24,7 @@
   <div id="myDropdown" class="dropdown-content">
     <a href="{{route('project.filterprojectstatus',['filterstatus' => 'processing'])}}">Processing</a>
     <a href="{{route('project.filterprojectstatus',['filterstatus' => 'approved'])}}">Approved</a>
+    <a href="{{route('project.filterprojectstatus',['filterstatus' => 'rejected'])}}">Rejected</a>
   </div>
 </div>
 

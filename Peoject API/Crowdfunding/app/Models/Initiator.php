@@ -4,11 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Authentication;
+use App\Models\Project;
 
-class userinfo extends Model
+class Initiator extends Model
 {
     use HasFactory;
-
     public function authentication()
     {
         return $this->hasOne(Authentication::class,'a_email','i_email');
