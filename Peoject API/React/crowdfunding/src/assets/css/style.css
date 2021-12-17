@@ -8,3 +8,26 @@
 .projectdetails-container {
   margin: 50px 250px;
 }
+.add-product {
+  margin-bottom: 10px;
+}
+.donation-container {
+  margin: 20px 300px;
+}
+.review-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.review-comment {
+  padding-left: 15px;
+  padding-right: 100px;
+}
+
+.review-time {
+  padding-left: 100px;
+  color: blue;
+}
+.delete-button {
+  position: sticky;
+  margin-left: 300px;
+}

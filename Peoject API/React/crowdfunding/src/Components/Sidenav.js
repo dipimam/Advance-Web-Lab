@@ -18,7 +18,7 @@ const Sidenav = () => {
   return (
     <div className="top-container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/Signin">
           CrowdFunding
         </Link>
 
@@ -30,9 +30,9 @@ const Sidenav = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <a className="nav-link" href={"/ProjectDetails/" + email}>
+              <Link className="nav-link" to={"/ProjectDetails/" + email}>
                 Projects
-              </a>
+              </Link>
             </li>
 
             <li class="nav-item">

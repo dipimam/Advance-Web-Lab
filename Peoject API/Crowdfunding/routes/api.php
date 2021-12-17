@@ -23,6 +23,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/login',[InitiatorController::class,'loginSubmit']);
 Route::get('/homepage',[ProjectController::class,'homepage']);
 Route::get('/projectdetails/{email}',[ProjectController::class,'projectdetails'])->middleware('APIAuth');
-Route::get('/donationhistory/{id}',[ProjectController::class,'donationhistory']);
+Route::get('/getprojectdetails/{id}',[ProjectController::class,'getprojectdetails'])->middleware('APIAuth');
+Route::post('/changeprojectdetails',[ProjectController::class,'changeprojectdetails'])->middleware('APIAuth');
+
+Route::post('/searchproject',[ProjectController::class,'searchproject'])->middleware('APIAuth');
+Route::post('/addproject',[ProjectController::class,'proposeprojectSubmit'])->middleware('APIAuth');
+Route::get('/deletereviews/{id}',[ProjectController::class,'deletereviews'])->middleware('APIAuth');
+
+Route::get('/alldonationhistory',[ProjectController::class,'alldonationhistory'])->middleware('APIAuth');
+Route::get('/donationhistory/{id}',[ProjectController::class,'donationhistory'])->middleware('APIAuth');
+Route::get('/reviews/{id}',[ProjectController::class,'reviews'])->middleware('APIAuth');
+Route::get('/allreviews',[ProjectController::class,'allreviews'])->middleware('APIAuth');
 Route::post('/searchproject',[ProjectController::class,'searchproject']);
 Route::get('/filterprojectstatus/{filterstatus}',[ProjectController::class,'filterprojectstatus']);
